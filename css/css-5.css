@@ -1,0 +1,464 @@
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: none;
+  touch-action: none;
+  -webkit-tap-highlight-color: transparent
+}
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0
+}
+
+.slick-list:focus {
+  outline: none
+}
+
+.slick-loading .slick-list {
+  background: #fff url(img/ajax-loader.gif) center center no-repeat
+}
+
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand
+}
+
+.slick-slider .slick-list, .slick-track, .slick-slide, .slick-slide img {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0)
+}
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  zoom: 1
+}
+
+.slick-track:before, .slick-track:after {
+  content: "";
+  display: table
+}
+
+.slick-track:after {
+  clear: both
+}
+
+.slick-loading .slick-track {
+  visibility: hidden
+}
+
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none
+}
+
+.slick-slide img {
+  display: block
+}
+
+.slick-slide.slick-loading img {
+  display: none
+}
+
+.slick-slide.dragging img {
+  pointer-events: none
+}
+
+.slick-initialized .slick-slide {
+  display: block
+}
+
+.slick-loading .slick-slide {
+  visibility: hidden
+}
+
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent
+}
+
+@font-face {
+  font-family: "slick";
+  src: url(../fonts/slick/slick.eot);
+  src: url(../fonts/slick/slick.eot?#iefix) format("embedded-opentype"),
+       url(../fonts/slick/slick.woff) format("woff"),
+       url(../fonts/slick/slick.ttf) format("truetype"),
+       url(../fonts/slick/slick.svg#slick) format("svg");
+  font-weight: normal;
+  font-style: normal
+}
+
+.slick-prev, .slick-next {
+  position: absolute;
+  display: block;
+  height: 20px;
+  width: 20px;
+  line-height: 0;
+  font-size: 0;
+  cursor: pointer;
+  background: transparent;
+  color: transparent;
+  top: 50%;
+  margin-top: -10px;
+  padding: 0;
+  border: none;
+  outline: none
+}
+
+.slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {
+  outline: none;
+  background: transparent;
+  color: transparent
+}
+
+.slick-prev:hover:before, .slick-prev:focus:before, .slick-next:hover:before, .slick-next:focus:before {
+  opacity: 1
+}
+
+.slick-prev.slick-disabled:before, .slick-next.slick-disabled:before {
+  opacity: 0.25
+}
+
+.slick-prev:before, .slick-next:before {
+  font-family: "slick";
+  font-size: 20px;
+  line-height: 1;
+  color: #fff;
+  opacity: 0.75;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
+}
+
+.slick-prev {
+  left: -25px
+}
+
+.slick-prev:before {
+  content: "\2190"
+}
+
+.slick-next {
+  right: -25px
+}
+
+.slick-next:before {
+  content: "\2192"
+}
+
+.slick-slider {
+  margin-bottom: 30px
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: -45px;
+  list-style: none;
+  display: block;
+  text-align: center;
+  padding: 0;
+  width: 100%
+}
+
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer
+}
+
+.slick-dots li button {
+  border: 0;
+  background: transparent;
+  display: block;
+  height: 20px;
+  width: 20px;
+  outline: none;
+  line-height: 0;
+  font-size: 0;
+  color: transparent;
+  padding: 5px;
+  cursor: pointer
+}
+
+.slick-dots li button:hover, .slick-dots li button:focus {
+  outline: none
+}
+
+.slick-dots li button:hover:before, .slick-dots li button:focus:before {
+  opacity: 1
+}
+
+.slick-dots li button:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "\2022";
+  width: 20px;
+  height: 20px;
+  font-family: "slick";
+  font-size: 6px;
+  line-height: 20px;
+  text-align: center;
+  color: #000;
+  opacity: 0.25;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
+}
+
+.slick-dots li.slick-active button:before {
+  color: #000;
+  opacity: 0.75
+}
+
+/**/
+table th {
+  font-weight: bold;
+}
+
+table td, table th {
+  padding: 9px 10px;
+  text-align: left;
+}
+
+@media only screen and (max-width: 767px) {
+  table.responsive {
+    margin-bottom: 0;
+  }
+
+  .pinned {
+    background: none repeat scroll 0 0 #ffffff;
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+    left: 0;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    position: absolute;
+    top: 0;
+    width: 35%;
+  }
+
+  .pinned table {
+    border-left: medium none;
+    border-right: medium none;
+    width: 100%;
+  }
+
+  .pinned table th, .pinned table td {
+    white-space: nowrap;
+  }
+
+  .pinned td:last-child {
+    border-bottom: 0 none;
+  }
+
+  div.table-wrapper {
+    border-right: 1px solid #cccccc;
+    margin-bottom: 20px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  div.table-wrapper div.scrollable table {
+    margin-left: 35%;
+  }
+
+  div.table-wrapper div.scrollable {
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+
+  table.responsive td, table.responsive th {
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap;
+  }
+
+  table.responsive th:first-child, table.responsive td:first-child, table.responsive td:first-child, table.responsive.pinned td {
+    display: none;
+  }
+}
+
+/**/
+.scrollable {
+  position: relative;
+}
+
+.scrollable:focus {
+  outline: 0;
+}
+
+.scrollable .viewport {
+  position: relative;
+  overflow: hidden;
+}
+
+.scrollable .viewport .overview {
+  position: absolute;
+}
+
+.scrollable .scroll-bar {
+  display: none;
+}
+
+.scrollable .scroll-bar.vertical {
+  position: absolute;
+  right: 0;
+  height: 100%;
+}
+
+.scrollable .scroll-bar.horizontal {
+  position: relative;
+  width: 100%;
+}
+
+.scrollable .scroll-bar .thumb {
+  position: absolute;
+}
+
+.scrollable .scroll-bar.vertical .thumb {
+  width: 100%;
+  min-height: 10px;
+}
+
+.scrollable .scroll-bar.horizontal .thumb {
+  height: 100%;
+  min-width: 10px;
+  left: 0;
+}
+
+.not-selectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.scrollable.default-skin {
+  padding-right: 10px;
+  padding-bottom: 6px;
+}
+
+.scrollable.default-skin .scroll-bar.vertical {
+  width: 6px;
+}
+
+.scrollable.default-skin .scroll-bar.horizontal {
+  height: 6px;
+}
+
+.scrollable.default-skin .scroll-bar .thumb {
+  background-color: black;
+  opacity: 0.4;
+  border-radius: 3px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+}
+
+.scrollable.default-skin .scroll-bar:hover .thumb {
+  opacity: 0.6;
+}
+
+.scrollable.gray-skin {
+  padding-right: 17px;
+}
+
+.scrollable.gray-skin .scroll-bar {
+  border: 1px solid gray;
+  background-color: #d3d3d3;
+}
+
+.scrollable.gray-skin .scroll-bar .thumb {
+  background-color: gray;
+}
+
+.scrollable.gray-skin .scroll-bar:hover .thumb {
+  background-color: black;
+}
+
+.scrollable.gray-skin .scroll-bar.vertical {
+  width: 10px;
+}
+
+.scrollable.gray-skin .scroll-bar.horizontal {
+  height: 10px;
+  margin-top: 2px;
+}
+
+.scrollable.modern-skin {
+  padding-right: 17px;
+}
+
+.scrollable.modern-skin .scroll-bar {
+  border: 1px solid gray;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-box-shadow: inset 0 0 5px #888;
+  -webkit-box-shadow: inset 0 0 5px #888;
+  box-shadow: inset 0 0 5px #888;
+}
+
+.scrollable.modern-skin .scroll-bar .thumb {
+  background-color: #95aabf;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border: 1px solid #536984;
+}
+
+.scrollable.modern-skin .scroll-bar.vertical .thumb {
+  width: 8px;
+  background: -moz-linear-gradient(left, #95aabf 0%, #547092 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #95aabf), color-stop(100%, #547092));
+  background: -webkit-linear-gradient(left, #95aabf 0%, #547092 100%);
+  background: -o-linear-gradient(left, #95aabf 0%, #547092 100%);
+  background: -ms-linear-gradient(left, #95aabf 0%, #547092 100%);
+  background: linear-gradient(to right, #95aabf 0%, #547092 100%);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient( startColorstr='#95aabf', endColorstr='#547092',GradientType=1 )";
+}
+
+.scrollable.modern-skin .scroll-bar.horizontal .thumb {
+  height: 8px;
+  background-image: linear-gradient(#95aabf, #547092);
+  background-image: -o-linear-gradient(#95aabf, #547092);
+  background-image: -moz-linear-gradient(#95aabf, #547092);
+  background-image: -webkit-linear-gradient(#95aabf, #547092);
+  background-image: -ms-linear-gradient(#95aabf, #547092);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient( startColorstr='#95aabf', endColorstr='#547092',GradientType=0 )";
+}
+
+.scrollable.modern-skin .scroll-bar.vertical {
+  width: 10px;
+}
+
+.scrollable.modern-skin .scroll-bar.horizontal {
+  height: 10px;
+  margin-top: 2px;
+}
+
+/**/
