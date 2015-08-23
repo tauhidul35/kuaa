@@ -1,5 +1,5 @@
 <?php
-class database{
+class database_sample{
     private static $host = 'localhost';
     private static $db_name = 'kuaa';
     private static $username = 'root';
