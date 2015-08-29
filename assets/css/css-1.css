@@ -1,3 +1,17 @@
+.comt_profile
+{
+float:left;
+height:225px;
+width:225px;
+}
+.mem_profile
+{
+width:525px;
+}
+.clear_fix
+{
+clear:both;
+}
 #sliding-popup {
   display: block;
   margin: 0;
