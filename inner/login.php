@@ -5,7 +5,6 @@ $params = $_POST['user'];
 
 $user = new user();
 
-echo 'login';
 if($login_as = $user->user_authentication($params['roll'], $params['password'])) {
     header('Location: ../dashboard.php');
 }else{
