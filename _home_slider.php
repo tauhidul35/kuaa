@@ -283,7 +283,9 @@
                         class="menu-block-wrapper menu-block-ctools-menu-user-front-page-navigation-1 menu-name-menu-user-front-page-navigation parent-mlid-menu-user-front-page-navigation:0 menu-level-1">
                         <ul class="menu">
                             <li class="first last leaf menu-mlid-934">
-                                <a href="register.php" target="_parent">Login or register</a>
+                                <a href="login.php" target="_parent">Login</a>
+                                <span style="color: #ffffff; text-transform: uppercase;">or</span>
+                                <a href="register.php" target="_parent">Register</a>
                             </li>
                         </ul>
                     </div>

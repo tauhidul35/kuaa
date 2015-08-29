@@ -7,7 +7,7 @@ $photo = $_FILES['user_photo'];
 if($params['password'] == $params['confirm_password']) {
     $user = new user();
     $user->new_user($params, $photo);
-//    header('Location: ../index.php');
+    header('Location: ../dashboard.php');
 }
 else{
     header('Location: ../registration.php');

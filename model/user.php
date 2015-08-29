@@ -76,9 +76,10 @@ class user {
         if($this->validate($user)){
             try {
                 $encrypted_password = $this->get_encrypted_password($user['password']);
-                $photo_name = $this->save_user_photo($photo);
+//                $photo_name = $this->save_user_photo($photo);
+                $photo_name = '';
 
-                $query = $this->db_connect->prepare("INSERT INTO $this->table_name(full_name, roll, graduation_year, email, phone, encrypted_password, current_designation, current_organization, photo) " .
+                $query = $this->db_connect->prepare("INSERT INTO $this->table_name(full_name, roll, graduation_year, email, phone, encrypted_password, current_designation, current_organization, image) " .
                     "VALUES(:full_name, :roll, :graduation_year, :email, :phone, :encrypted_password, :current_designation, :current_organization, :photo)");
 
                 $query->bindParam(':full_name', $user['name'], PDO::PARAM_STR);
@@ -91,15 +92,33 @@ class user {
                 $query->bindParam(':current_organization', $user['current_organization'], PDO::PARAM_STR);
                 $query->bindParam(':photo', $photo_name, PDO::PARAM_STR);
 
+//                var_dump($query);
                 return $query->execute();
 //                var_dump($query->errorInfo());
+//                return true;
             }
             catch(Exception $ex) {
                 var_dump($ex->getMessage());
+                return false;
             }
         }
         else{
             return false;
+        }
+    }
+
+    public function user_authentication($user_roll, $user_password){
+        $encrypted_password = $this->get_encrypted_password($user_password);
+
+        $query = $this->db_connect->prepare("SELECT * FROM $this->table_name WHERE roll=:roll AND encrypted_password=:encr_pass");
+        $query->bindParam(':roll', $user_roll, PDO::PARAM_STR);
+        $query->bindParam(':encr_pass', $encrypted_password, PDO::PARAM_STR);
+        $query->execute();
+
+        if($user=$query->fetch(PDO::FETCH_OBJ)) {
+            return $user;
+        } else{
+            return NULL;
         }
     }
 }
