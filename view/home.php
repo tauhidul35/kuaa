@@ -1,3 +1,4 @@
+<?php include_once '_home_slider.php' ?>
 <div class="row row-middle-main">
     <div class="large-9 medium-12 small-12 columns">
         <div class="column-content">
@@ -62,54 +63,33 @@
         <div class="column-content">
             <div class="panel-pane pane-views-panes pane-list-events-panel-pane-6 blue-line">
                 <h2 class="pane-title"> UPCOMING EVENTS </h2>
-
                 <div class="pane-content">
                     <div class="view view-list-events view-id-list_events view-display-id-panel_pane_6 upcoming-event date-entry-table view-dom-id-5b0462eb73b28be3a50a34aec6d0c96f jquery-once-1-processed">
                         <div class="view-header">
-                            <div class="buttons-bg">
-                                .
-                            </div>
+                            <div class="buttons-bg">.</div>
                         </div>
-
                         <div class="view-content slick-initialized slick-slider">
                             <div class="slick-list draggable" tabindex="0">
-                                <div class="slick-track"
-                                     style="opacity: 1; width: 292px; transform: translate3d(0px, 0px, 0px);">
-                                    <div
-                                        class="views-row views-row-1 views-row-odd views-row-first views-row-last slick-slide slick-active"
-                                        index="0" style="width: 292px;">
-
-                                        <div
-                                            class="views-field views-field-field-rotating-image-gallery">
+                                <div class="slick-track" style="opacity: 1; width: 292px; transform: translate3d(0px, 0px, 0px);">
+                                    <div class="views-row views-row-1 views-row-odd views-row-first views-row-last slick-slide slick-active" style="width: 292px;">
+                                        <div class="views-field views-field-field-rotating-image-gallery">
                                             <div class="field-content">
-                                                <img typeof="foaf:Image"
-                                                     src="/assets/images/temp-uploads/renuion16.jpg"
-                                                     width="360" height="200"
-                                                     alt="Radcliffe Camera (Greg Smolonski)">
+                                                <img typeof="foaf:Image" src="/assets/images/temp-uploads/renuion16.jpg" width="360" height="200" alt="Radcliffe Camera (Greg Smolonski)">
                                             </div>
                                         </div>
                                         <div class="views-field views-field-nothing">
-																	<span
-                                                                        class="field-content">
-																		<div
-                                                                            class="view-event-title">
-                                                                            <a href="#">Meeting
-                                                                                Minds: Alumni Reunion</a>
-                                                                        </div>
-																		<div class="view-event-date">
-																			<span class="date-display-single"
-                                                                                  property="dc:date"
-                                                                                  datatype="xsd:dateTime"
-                                                                                  content="2015-09-18T14:00:00+01:00">xx xx 2016</span>
-                                                                        </div>
-																		<div class="view-event-location">
-                                                                            Not Yet Fixed
-                                                                        </div>
-																		<div class="facebook-share">
-                                                                            <a
-                                                                                href="#"
-                                                                                target="_blank">Share on Facebook</a>
-                                                                        </div></span>
+                                            <span class="field-content">
+                                                <div class="view-event-title">
+                                                    <a href="#">Meeting Minds: Alumni Reunion</a>
+                                                </div>
+                                                <div class="view-event-date">
+                                                    <span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2015-09-18T14:00:00+01:00">xx xx 2016</span>
+                                                </div>
+                                                <div class="view-event-location">Not Yet Fixed</div>
+                                                <div class="facebook-share">
+                                                    <a href="#" target="_blank">Share on Facebook</a>
+                                                </div>
+                                            </span>
                                         </div>
                                     </div>
                                 </div>

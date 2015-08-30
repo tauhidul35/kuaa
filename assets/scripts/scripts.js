@@ -174,8 +174,9 @@
 				
 				//landing page banners
         $('.rotating-banner .field-name-field-banners').slick({
-          autoplay: true,
-          autoplaySpeed: 5000,
+            //rtl: true,
+            autoplay: true,
+            autoplaySpeed: 5000
         });
         $('.landing-page-front .view-list-events .view-content').slick();
         
@@ -185,7 +186,7 @@
         });
         $(document).on('opened.fndtn.reveal', '[data-reveal]', function () {
     	  $('.lightbox-gallery .view-content').slick({
-          	slidesToShow: 1,
+          	slidesToShow: 1
           });
     	});
             	

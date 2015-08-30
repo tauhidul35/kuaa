@@ -2,11 +2,11 @@
 require_once '../model/user.php';
 
 $params = $_POST['user'];
-$photo = $_FILES['user_photo'];
+//$photo = $_FILES['user_photo'];
 
 if($params['password'] == $params['confirm_password']) {
     $user = new user();
-    $user->new_user($params, $photo);
+    $user->new_user($params);
     header('Location: ../dashboard.php');
 }
 else{

@@ -72,15 +72,13 @@ class user {
 
     //ToDo: Remove this params dependency using interface
     // $user['name', 'roll', 'graduation_year', 'email', 'phone', 'password', 'current_profession', 'current_organization']
-    public function new_user($user, $photo){
+    public function new_user($user){
         if($this->validate($user)){
             try {
                 $encrypted_password = $this->get_encrypted_password($user['password']);
-//                $photo_name = $this->save_user_photo($photo);
-                $photo_name = '';
 
-                $query = $this->db_connect->prepare("INSERT INTO $this->table_name(full_name, roll, graduation_year, email, phone, encrypted_password, current_designation, current_organization, image) " .
-                    "VALUES(:full_name, :roll, :graduation_year, :email, :phone, :encrypted_password, :current_designation, :current_organization, :photo)");
+                $query = $this->db_connect->prepare("INSERT INTO $this->table_name(full_name, roll, graduation_year, email, phone, encrypted_password, current_designation, current_organization) " .
+                    "VALUES(:full_name, :roll, :graduation_year, :email, :phone, :encrypted_password, :current_designation, :current_organization)");
 
                 $query->bindParam(':full_name', $user['name'], PDO::PARAM_STR);
                 $query->bindParam(':roll', $user['roll'], PDO::PARAM_STR);
@@ -90,7 +88,6 @@ class user {
                 $query->bindParam(':encrypted_password', $encrypted_password, PDO::PARAM_STR);
                 $query->bindParam(':current_designation', $user['current_profession'], PDO::PARAM_STR);
                 $query->bindParam(':current_organization', $user['current_organization'], PDO::PARAM_STR);
-                $query->bindParam(':photo', $photo_name, PDO::PARAM_STR);
 
 //                var_dump($query);
                 return $query->execute();

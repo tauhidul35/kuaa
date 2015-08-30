@@ -1,6 +1,6 @@
 <div>
     <h2 class="large-offset-1">Registration:</h2>
-    <div class="large-offset-1 large-6">
+    <div class="large-offset-1 large-4">
     <form action="inner/register.php" method="post" enctype="multipart/form-data">
         <div>
 <!--            <label class="label" for="user_name">Name</label>-->
@@ -38,10 +38,10 @@
 <!--            <label class="label" for="user_organization">Institution/Organization</label>-->
             <input type="text" name="user[current_organization]" id="user_organization" placeholder="Institution/Organization"/>
         </div>
-        <div>
-            <label class="label" for="user_photo">Your Photo</label>
-            <input type="file" name="user_photo" id="user_photo"/>
-        </div>
+<!--        <div>-->
+<!--            <label class="label" for="user_photo">Your Photo</label>-->
+<!--            <input type="file" name="user_photo" id="user_photo"/>-->
+<!--        </div>-->
         <div>
             <input type="submit" name="register" id="register_button" class="button" value="Register"/>
         </div>
