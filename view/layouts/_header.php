@@ -12,7 +12,7 @@
                                     <div class="panel-pane pane-custom pane-2 university-logo left">
                                         <div class="pane-content">
                                             <p>
-                                                <a target="_parent" href="/index.php"><img src="/assets/images/logo.png"></a>
+                                                <a target="_parent" href="/index.php"><img src="/assets/images/logo-kuaa.png"></a>
                                             </p>
                                         </div>
                                     </div>

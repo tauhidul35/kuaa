@@ -310,7 +310,7 @@
                             <div class="panel-pane pane-custom pane-4 university-logo-large left">
                                 <div class="pane-content">
                                     <p>
-                                        <a href="#" target="_parent"><img src="/assets/images/logo-small.png"></a>
+                                        <a href="#" target="_parent"><img src="/assets/images/logo-kuaa-sm.png"></a>
                                     </p>
                                 </div>
                             </div>
@@ -318,7 +318,7 @@
                             <div class="panel-pane pane-custom pane-5 university-logo left">
                                 <div class="pane-content">
                                     <p>
-                                        <a href="#" target="_parent"><img src="/assets/images/logo.png"></a>
+                                        <a href="#" target="_parent"><img src="/assets/images/logo-kuaa.png"></a>
                                     </p>
                                 </div>
                             </div>

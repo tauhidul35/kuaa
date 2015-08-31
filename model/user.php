@@ -3,7 +3,7 @@ require_once 'database.php';
 
 class user {
     private $db_connect;
-    private $table_name = 'kualu_users';
+    private $table_name = 'users';
     public $errors = [];
     private $uploads_photo_path = 'uploads/users/';
 
