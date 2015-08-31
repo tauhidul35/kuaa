@@ -104,7 +104,7 @@
                                                                 <p>Khulna University</p>
                                                                 <p>XXXX</p>
                                                                 <p>XXXX</p>
-                                                                <p><a href="mailto:enquiries@alumni.ku.ac.bd">enquiries@alumni.ku.ac.bd</a></p>
+                                                                <p><a href="mailto:enquiries@alumni.ku.ac.bd">enquiries@kuaa.org.bd</a></p>
                                                                 <p>+88(0) XXXXXXXXX</p>
                                                             </div>
                                                         </div>

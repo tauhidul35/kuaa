@@ -83,9 +83,9 @@
                                                     <a href="#">Meeting Minds: Alumni Reunion</a>
                                                 </div>
                                                 <div class="view-event-date">
-                                                    <span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2015-09-18T14:00:00+01:00">xx xx 2016</span>
+                                                    <span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2015-09-18T14:00:00+01:00">17 December, 2015</span>
                                                 </div>
-                                                <div class="view-event-location">Not Yet Fixed</div>
+                                                <div class="view-event-location">Khulna University Campus</div>
                                                 <div class="facebook-share">
                                                     <a href="#" target="_blank">Share on Facebook</a>
                                                 </div>
